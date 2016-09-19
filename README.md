@@ -3,7 +3,7 @@ Your git hooks stay inside the .git folder. Since this folder contains your loca
 
 ## What is the purpose ?
 
-1. using the (ghooks)[https://github.com/gtramontina/ghooks]
+1. using the [ghooks](https://github.com/gtramontina/ghooks)
 2. define the correction status and do what you want to do
    2.1. use eslint to check your code in the pre-commit status
    2.2. generate the default commit log in the prepare-commit-msg status
