@@ -1,0 +1,26 @@
+{
+  "extends": "airbnb",
+  "ecmaFeatures": {
+    "jsx": true,
+    "modules": true,
+    "experimentalObjectRestSpread": true
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parser": "babel-eslint",
+  "settings": {
+    "import/core-modules": ["actions", "constants", "utils", "components", "static"]
+  },
+  "rules": {
+    "max-len": ["error", 120, 4, { "comments": 80 }],
+    "indent": ["error", 4],
+    "react/jsx-indent": [2, 4],
+    "no-param-reassign": ["error", { "props": false }]
+  },
+  "plugins": [
+    "react"
+  ]
+}
