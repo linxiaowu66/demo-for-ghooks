@@ -9,17 +9,12 @@
   "dist": "dist",
   "mainInput": "main",
   "mainOutput": "main",
-  "dependencies": {
-    "react-router": "^0.11.6",
-    "reflux": "^0.2.7",
-    "react": "~0.12.2",
-    "normalize.css": "~3.0.3"
-  },
   "devDependencies": {
     "babel-eslint": "^6.1.2",
-    "cz-conventional-changelog": "^1.2.0",
+    "react": "^15.2.1",
     "eslint": "^3.5.0",
     "eslint-config-airbnb": "^11.1.0",
+    "eslint-plugin-babel": "^3.3.0",
     "eslint-plugin-import": "^1.15.0",
     "eslint-plugin-jsx-a11y": "^2.2.2",
     "eslint-plugin-react": "^6.2.2",
@@ -28,9 +23,6 @@
     "validate-commit-msg": "^2.8.0"
   },
   "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    },
     "validate-commit-msg": {
       "types": [
         "feat",
@@ -56,7 +48,7 @@
     }
   },
   "scripts": {
-    "lint": "eslint ./ --cache --ignore-pattern .gitignore",
+    "lint": "DEBUG=eslint:cli,eslint:cli-engine,eslint:glob-util eslint ./ --cache --ignore-pattern .gitignore",
     "precommit-msg": "echo Pre-commit checking...please wait && exit 0"
   }
 }
